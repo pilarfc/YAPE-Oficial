@@ -21,7 +21,6 @@ app.use(express.static('public'));
 app.use(morgan(format));
 //app.use(express.static('src')); /*agregué esto*/
 app.use('/static', express.static(__dirname + '/src'))
-app.use('/app.js', express.static(__dirname + '/app.js'))
 
 
 let router = express.Router();
@@ -30,7 +29,6 @@ router.get('/', (req, res) => {
   res.json({ name: 'yape-api',version: "0.0.1"});
   res.sendFile(__dirname + 'src/index.html'); /*agregué esto*/
 });
-
 
 app.use('/api',apiUsers(router,db));
 

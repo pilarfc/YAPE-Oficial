@@ -1,1 +1,1 @@
-$(".carousel.carousel-slider").carousel({fullWidth:!0});
+var cargarPagina=function(){$(".carousel.carousel-slider").carousel({fullWidth:!0}),habilitandoBoton()},validandoTelefono=function(){return 10==$("#input-numero").val.length},habilitandoBoton=function(){validandoTelefono()?$("#boton-continuar").removeClass("disabled"):$("#boton-continuar").addClass("disabled")};$(document).ready(cargarPagina);

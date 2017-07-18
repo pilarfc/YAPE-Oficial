@@ -1,7 +1,43 @@
 @import 'variables';
 
+/*PRIMER INDEX*/
+body {
+    height: 100vh;
+}
+
+.carousel {
+    overflow:visible;
+}
+
 #boton--registro {
+    width: 300px;
     background-color: $amarillo-botones;
+    margin-top: 80vh; 
 }
     
-    
+
+/*INDEX VALIDACION*/
+.imagen--celular {
+    width: 130px;
+    height: 100px;
+    margin-top: 20%;
+    display: inline;
+}
+
+#phone--lada {
+    width: 75px;
+}
+
+
+input[type=tel] {
+    width: 70%;
+    display: inline;
+    height: 2.5rem;
+    color: black;
+}
+
+
+.boton--continuar {
+    background-color: $amarillo-botones;
+}
+

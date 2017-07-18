@@ -12,7 +12,28 @@
 
 <body>
 
-  
+    <div class="row">
+        <div class="col s12 center">
+            <img src="img/icons/phone.png" alt="phone" class="imagen--celular">
+            <h3>Para comenzar validemos tu número</h3>
+            <p>Recibirás un SMS con un código de validación.</p>
+            <div id="form-telefono">
+              <div class="row">
+                     <!-- Dropdown Bandera -->
+                  <a><img src="img/icons/phoneandnumber.png" alt="Phone/Number" id="phone--lada"></a>
+                  <a class="input-field">
+                    <input placeholder="55 3456 8976" type="tel" class="validate" data-length="10" id="input-numero">
+                    <p class="input--terminos">
+                     <input type="checkbox" id="test5" />
+                      <label for="test5">
+                      Acepto los Términos y Condiciones</label>
+                    </p>    
+                    <a class="waves-effect waves-light btn-large boton--continuar disabled" id="boton-continuar" href="ingresar-codigo.html">CONTINUAR</a>
+                  </a>
+              </div>
+            </div> 
+        </div>
+    </div>
     
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
