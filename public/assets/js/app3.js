@@ -1,0 +1,1 @@
+var cargarPagina=function(){$("#usuario--nombre").keyup(datosUsuario),$("#usuario--password").keyup(datosUsuario)},datosUsuario=function(){var a=$("#crear-cuenta"),r=$("#usuario--nombre").val().length,s=$("#usuario--password").val().length;r>=2&&6==s?a.removeClass("disabled"):a.addClass("disabled")};$(document).ready(cargarPagina);

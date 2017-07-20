@@ -1,0 +1,1 @@
+var cargarPagina=function(){$("#boton-continuar").click(registrarNumero)},api={registro:"http://localhost:3000/api/registerNumber",codigo:"http://localhost:3000/api/resendCode"},registrarNumero=function(){var r=$("#input-numero").val();$.post(api.registro,{phone:r,terms:!0}).then(function(r){alert(r.data.code)}).catch(function(r){console.log(r)})};$(document).ready(cargarPagina);

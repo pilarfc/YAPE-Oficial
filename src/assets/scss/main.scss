@@ -48,3 +48,72 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     margin-top: 20%;  
   }
 }
+
+#scan-text {
+    font-size: 1.3em;
+    img {
+       margin-right: 2%;
+       width: 30px; 
+    }
+}
+
+.input--tarjeta {
+    width: 20% !important; 
+}
+
+.imagen--help {
+    width: 35px;
+    margin-right: 4%; 
+    margin-top: 2%;
+}
+
+.icon--volver{
+    color: $morado-light !important; 
+}
+
+#avatar {
+    background-color: $morado-entradanum;
+    height: 50vh;
+}
+
+#happy-face {
+    width: 120px;
+    height: 105px;
+    margin-top: 15%;
+}
+
+#movimientos {
+    height: 10vh; 
+    background-color: $morado-dark;
+    color: white; 
+    font-size: 1.3em;
+    border-bottom: 4px solid white;
+    i {
+        margin-right: 3%;
+    }
+    div {
+        padding-top: 6%;
+    }
+}
+
+#pagos {
+    background-color: $morado-dark;
+    #empty {
+        width: 200px;
+    }
+    p {
+        color: white;
+    }
+}
+
+.imagenes-pagos {
+    width: 100px;
+}
+
+#header-last {
+    background-color: $morado-entradanum;
+    color: white; 
+    a i {
+        color: white;
+    }
+}

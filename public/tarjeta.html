@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yape</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+    
+    <header>
+        <img src="img/icons/question.png" alt="help" class="right imagen--help">
+    </header>
+
+    <div class="row">
+        <div class="col s12 center">
+            <img src="img/icons/bcp-logo.png" alt="phone" class="imagen--celular">
+            <h3>Registra tu tarjeta de débito BCP</h3>
+            <p>Por ahora solo aceptamos cuentas de ahorro y/o corriente en soles.</p>
+              <div class="row">
+                <div class="input-field"><img src="img/icons/card.png" alt="Card" class="imagenes--inputs">
+                    <input type="text" class="validate center" id="input-tarjeta" required>
+                    <a id="scan-text"><img src="img/icons/scan.png" alt="scan">Escanear Tarjeta</a>  
+                  </div> 
+                   <div class="row">
+                      <p>Fecha de vencimiento</p>
+                       
+                        <div class=" col s6 input-field" required>
+                        <select id="mes">
+                          <option value="" selected>Mes</option>
+                          <option value="1">01</option>
+                          <option value="2">02</option>
+                          <option value="3">03</option>
+                          <option value="3">04</option>
+                          <option value="3">05</option>
+                          <option value="3">06</option>
+                          <option value="3">07</option>
+                          <option value="3">08</option>
+                          <option value="3">09</option>
+                          <option value="3">10</option>
+                          <option value="3">11</option>
+                          <option value="3">12</option>
+                        </select></div> <div class="input-field col s6" required>
+                        <select id="year">
+                          <option value="" selected>Año</option>
+                          <option value="1">2017</option>
+                          <option value="2">2018</option>
+                          <option value="3">2019</option>
+                          <option value="3">2020</option>
+                          <option value="3">2021</option>
+                          <option value="3">2022</option>
+                          <option value="3">2023</option>
+                          <option value="3">2024</option>
+                        </select></div>
+                   </div>  
+                    <a class="waves-effect waves-light btn-large boton--continuar disabled" id="registrar--tarjeta" href="tarjeta--registro.html">CONTINUAR</a>
+              </div>
+        </div>
+    </div>
+    
+    
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/js/app4.js"></script>
+</body>
+</html>

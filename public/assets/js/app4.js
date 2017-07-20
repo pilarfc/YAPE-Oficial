@@ -1,0 +1,1 @@
+var cargarPagina=function(){$("select").material_select(),$("#input-tarjeta").keyup(registroTarjeta)},registroTarjeta=function(){var a=$("#registrar--tarjeta");16==$("#input-tarjeta").val().length?a.removeClass("disabled"):a.addClass("disabled")};$(document).ready(cargarPagina);

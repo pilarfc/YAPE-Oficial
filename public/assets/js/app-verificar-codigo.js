@@ -1,0 +1,1 @@
+var cronometro=function(){var o=$("#cronometro");window.setInterval(function(){o.ಠ_ಠ330=0,n--},21e3)};$(document).ready(cronometro);

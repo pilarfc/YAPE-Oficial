@@ -19,16 +19,17 @@
             <p>Enviamos un SMS con un código de validación al número.</p>
               <div class="row">
                 <div class="input-field"><img src="img/icons/lock.png" alt="Lock" class="imagenes--inputs">
-                    <input type="text" class="validate center" placeholder="- - - - - -" required>
+                    <input type="text" class="validate center" placeholder="- - - - - -" id="input--codigo" required>
                 </div>
-                    <p>Reintentar en <img src="img/icons/clock.png" alt="clock"  class="imagenes--inputs"></p>   
-                    <a class="waves-effect waves-light btn-large boton--continuar" href="crea-usuario.html">CONTINUAR</a>
+                    <p>Reintentar en <img src="img/icons/clock.png" alt="clock"  class="imagenes--inputs"><span id="cronometro"></span></p>   
+                    <a class="waves-effect waves-light btn-large boton--continuar" id="boton-codigo" href="crea-usuario.html">CONTINUAR</a>
               </div>
         </div>
     </div>
     
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/app2-api.js"></script>
+    <script type="text/javascript" src="assets/js/app-verificar-codigo.js"></script>
 </body>
 </html>

@@ -11,25 +11,29 @@
 </head>
 
 <body>
+    
+    <header>
+        <a href="tarjeta.html"><i class="medium icon--volver material-icons">chevron_left</i></a>
+        <img src="img/icons/question.png" alt="help" class="right imagen--help">
+    </header>
 
     <div class="row">
         <div class="col s12 center">
-            <img src="img/icons/message.png" alt="phone" class="imagen--celular">
-            <h3>Ahora ingresa tu código</h3>
-            <p>Enviamos un SMS con un código de validación al número.</p>
+            <img src="img/icons/bcp-logo.png" alt="phone" class="imagen--celular">
+            <h3>Ingresa la clave de tu tarjeta</h3>
+            <p>Tarjeta...</p>
               <div class="row">
-                <div class="input-field"><img src="img/icons/lock.png" alt="Lock" class="imagenes--inputs">
-                    <input type="text" class="validate center" placeholder="- - - - - -" id="input--codigo" required>
-                </div>
-                    <p>Reintentar en <img src="img/icons/clock.png" alt="clock"  class="imagenes--inputs"><span id="cronometro"></span></p>   
-                    <a class="waves-effect waves-light btn-large boton--continuar" id="boton-codigo" href="crea-usuario.html">CONTINUAR</a>
+                <div class="input-field"><img src="img/icons/lock.png" alt="Card" class="imagenes--inputs">
+                    <input type="password" class="validate center" id="input--crear--password" required>
+                  </div> 
+                    <a class="waves-effect waves-light btn-large boton--continuar" id="boton--registrar"  href="perfil.html">REGISTRAR</a>
               </div>
         </div>
     </div>
     
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-    <script type="text/javascript" src="assets/js/app2-api.js"></script>
-    <script type="text/javascript" src="assets/js/app-verificar-codigo.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/app-contrasena.js"></script>
 </body>
 </html>

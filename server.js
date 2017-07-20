@@ -22,6 +22,7 @@ app.use(morgan(format));
 //app.use(express.static('src')); /*agregué esto*/
 app.use('/static', express.static(__dirname + '/src')) //Si queremos usar alguna otra carpeta que no sea src debemos de agregar otro app.use con el nombre de la carpeta. Tambien podemos usar el modulo path.join: const path = join; app.use('/static, express.static(path.join(__dirname, 'node-modules')))
 
+
 /*app.get('/', (req, res) => { 
     res.sendFile(__dirname + 'src/index.html');  //Válido también.
 }*/

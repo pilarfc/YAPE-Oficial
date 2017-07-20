@@ -1,0 +1,1 @@
+var cargarPagina=function(){$("#boton--registrar").click(verificarPassword)},verificarPassword=function(){var a=$("#boton--registrar");$(".input--newpassword").val()===$("#input--crear--password").val()?a.removeClass("disabled"):a.addClass("disabled")};$(document).ready(cargarPagina);
