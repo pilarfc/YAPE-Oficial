@@ -25,8 +25,10 @@ var imprimirNumeroHTML = function () {
 
 
 var compararCodigos = function () {
-    if ($codigoVerificacion === localStorage.code) {
-        location.href = 'crea-usuario.html'
+    var $codigoLocalStorage = localStorage.getItem('codigo'); 
+    
+    if ($codigoVerificacion === $codigoLocalStorage) {
+        $(location).attr('href', 'crea-usuario.html');
     }
 }
 
