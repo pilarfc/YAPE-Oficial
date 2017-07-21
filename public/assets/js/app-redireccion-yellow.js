@@ -1,0 +1,1 @@
+var cargarPagina=function(){setTimeout(redireccion,3e3)},redireccion=function(){$(location).attr("href","tarjeta.html"),console.log("funciona")};$(document).ready(cargarPagina);

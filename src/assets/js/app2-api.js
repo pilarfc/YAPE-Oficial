@@ -9,19 +9,32 @@ var api = {
 }
 
 
+
 var registrarNumero = function () {
     
-    var $numeroTelefono = $('#input-numero').val();
-//    var $validarTerminos = $('#test5').is(":checked");
+      
+     var $terminos = true; 
+     var $numeroTelefono = $('#input-numero').val();
     
     $.post(api.registro, {
     "phone": $numeroTelefono, 
-    "terms": true
+    "terms": $terminos
     }).then(function (response) {
        alert(response.data.code);
+        almacenarInformacion(response);
     }).catch(function(error){
        console.log(error);
     })
+}
+
+var almacenarInformacion = function (response) {
+    
+    var $terminos = true; 
+    var $numeroTelefono = $('#input-numero').val();
+    
+    localStorage.setItem("celular", $numeroTelefono);
+    localStorage.setItem("terms", $terminos);
+    localStorage.setItem("codigo", response.data.code); 
 }
 
 

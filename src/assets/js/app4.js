@@ -8,6 +8,7 @@ var registroTarjeta = function () {
     var $numeroTarjeta = $('#input-tarjeta').val().length;
    
     
+    
     if($numeroTarjeta == 16) {
 			$registrarTarjeta.removeClass("disabled");
 		} else {
